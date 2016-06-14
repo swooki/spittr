@@ -13,8 +13,6 @@ public class HomeControllerTest {
     public void testHomePage() throws Exception {
 	HomeController controller = new HomeController();
 	MockMvc mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
-	mockMvc.perform(MockMvcRequestBuilders.get("/"))
-	.andExpect(MockMvcResultMatchers.view().name("home"));
-	assertEquals("home", controller.home());
+	mockMvc.perform(MockMvcRequestBuilders.get("/")).andExpect(MockMvcResultMatchers.view().name("home"));
     }
 }
