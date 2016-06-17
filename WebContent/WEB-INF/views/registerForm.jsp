@@ -3,7 +3,7 @@
 
 <html>
 <head>
-<title>Spittr</title>
+<title>Register</title>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/style.css"/>">
 </head>
